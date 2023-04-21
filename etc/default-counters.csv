@@ -15,9 +15,9 @@ DCGM_FI_DEV_POWER_USAGE,              gauge, Power draw (in W).
 DCGM_FI_DEV_TOTAL_ENERGY_CONSUMPTION, counter, Total energy consumption since boot (in mJ).
 
 # PCIE
-DCGM_FI_DEV_PCIE_TX_THROUGHPUT,  counter, Total number of bytes transmitted through PCIe TX (in KB) via NVML.
-DCGM_FI_DEV_PCIE_RX_THROUGHPUT,  counter, Total number of bytes received through PCIe RX (in KB) via NVML.
-DCGM_FI_DEV_PCIE_REPLAY_COUNTER, counter, Total number of PCIe retries.
+DCGM_FI_DEV_PCIE_TX_THROUGHPUT,  counter, Total number of bytes transmitted through PCIe TX (in KB) via NVML. # 在计算机领域中，tx通常指代传输（transfer）或发送（transmit）。在此处，DCGM_FI_DEV_PCIE_TX_THROUGHPUT表示通过PCIe发送的数据总量。
+DCGM_FI_DEV_PCIE_RX_THROUGHPUT,  counter, Total number of bytes received through PCIe RX (in KB) via NVML.  # 在计算机领域中，RX通常指代接收（receive），特别是在网络传输中。例如，网络接口卡（NIC）可以接收来自网络的数据包，然后将其传输到计算机中进行处理。因此，RX通常表示接收数据的过程。
+DCGM_FI_DEV_PCIE_REPLAY_COUNTER, counter, Total number of PCIe retries.  # 这段内容是关于一个名为“DCGM_FI_DEV_PCIE_REPLAY_COUNTER”的计数器的说明。该计数器记录了PCIe重试的总次数，其数值为21。PCIe重试通常发生在数据传输过程中出现错误时，系统会尝试重新传输数据，以确保数据传输的正确性。这个计数器可以用来监测系统的稳定性和性能表现。
 
 # Utilization (the sample period varies depending on the product)
 DCGM_FI_DEV_GPU_UTIL,      gauge, GPU utilization (in %).
